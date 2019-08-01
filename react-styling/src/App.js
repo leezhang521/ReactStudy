@@ -1,15 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ToDo from './ToDo';
 
-function App(props) {
+const todoList = [
+  {
+      title: 'JavaScript',
+      isOdd: true
+  },
+  {
+      title: 'CSS',
+      isOdd: false
+  },
+  {
+      title: 'React',
+      isOdd: true
+  }
+]
+
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p style={{ backgroundColor: props.color }}>Hello, {props.name}</p>
-      </header>
-    </div>
+    <>
+      <ToDo todoList={todoList} />
+    </>
   );
 }
 
