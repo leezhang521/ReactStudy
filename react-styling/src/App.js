@@ -1,14 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Card from './Card';
 
 function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p style={{ backgroundColor: props.color }}>Hello, {props.name}</p>
-      </header>
+      <Card title="Card Title" text="Some quick example text to build on the card title and make up the bulk of the card's content." linkText="Go W3cplus" linkUrl="//www.w3cplus.com"/>
     </div>
   );
 }
