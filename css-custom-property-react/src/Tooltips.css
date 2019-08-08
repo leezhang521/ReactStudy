@@ -1,0 +1,48 @@
+.tooltips{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    /* CSS Custom Property for Tooltips */
+
+    /* --padding: 10px;
+    --borderRadius: 5px;
+    --borderWidth: 0px;
+    --color: #333;
+    --backgroundColor: #fff;
+    --borderColor: #fff;
+
+    --triangleHeight: 10px;
+    --position: 10px; */
+
+    --triangleColor: var(--backgroundColor, #fff);
+    --triangleBorderColor: var(--borderColor, #fff);
+    --triangleBorderWidth: var(--borderWidth, 0px);
+
+    background-color: var(--backgroundColor, #fff);
+    color: var(--color, #333);
+    padding: var(--padding, 10px);
+    border-radius: var(--borderRadius, 5px);
+    border: var(--borderWidth, 0px) solid var(--borderColor, #fff);
+}
+
+.tooltips__arrow {
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+
+    width: calc(var(--triangleHeight, 10px) * 1.41);
+    height: var(--triangleHeight, 10px);
+    left: var(--position, 10px); 
+}
+
+.tooltips__arrow--inner {
+    width: 100%;
+    height: 100%;
+    transform: rotate(315deg);
+    transform-origin: left top;
+
+    background-color: var(--triangleColor, #fff);
+    border: var(--triangleBorderWidth, 0px) solid var(--triangleBorderColor, #fff);
+}

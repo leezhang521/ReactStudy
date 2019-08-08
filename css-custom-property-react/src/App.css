@@ -37,13 +37,27 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 10px;
 }
 
 .button {
   margin: 5px;
 }
 
+.tooltips {
+  margin: 20px;
+}
+
 .primary {
+  --backgroundColor: #007bff;
+  --borderColor: #007bff;
+  --color: #fff;
+  --padding: .375rem .75rem;
+  --borderRadius: .25rem;
+}
+
+
+.tooltips__primary {
   --backgroundColor: #007bff;
   --borderColor: #007bff;
   --color: #fff;
